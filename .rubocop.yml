@@ -1,0 +1,114 @@
+AllCops:
+  TargetRubyVersion: 2.6
+  NewCops: enable
+
+Lint/ReturnInVoidContext:
+  Enabled: false
+
+Lint/Void:
+  Enabled: false
+
+Style/ClassCheck:
+  EnforcedStyle: kind_of?
+
+Layout/LineLength:
+  Max: 120
+
+Metrics/ClassLength:
+  Max: 1000
+
+Metrics/AbcSize:
+  Max: 40
+
+Metrics/MethodLength:
+  Max: 15
+
+Metrics/ParameterLists:
+  CountKeywordArgs: false
+
+Style/CollectionMethods:
+  Enabled: true
+
+Style/MethodCallWithArgsParentheses:
+  Enabled: true
+  EnforcedStyle: require_parentheses
+  AllowParenthesesInMultilineCall: true
+  AllowParenthesesInCamelCaseMethod: true
+  AllowParenthesesInChaining: true
+  IgnoreMacros: false
+  IgnoredMethods:
+  - attr_accessor
+  - attr_reader
+  - attr_writer
+  - extend
+  - include
+  - private
+  - private_class_method
+  - private_constant
+  - raise
+  - require
+  - require_relative
+  - yield
+
+Style/DoubleNegation:
+  Enabled: false
+
+Style/FormatStringToken:
+  Enabled: false
+
+Style/IfUnlessModifier:
+  Enabled: false
+
+Style/RescueModifier:
+  Exclude:
+    - '**/*_spec.rb'
+
+Style/StderrPuts:
+  Enabled: false
+
+Style/TrailingCommaInArguments:
+  EnforcedStyleForMultiline: comma
+
+Style/TrailingCommaInArrayLiteral:
+  EnforcedStyleForMultiline: comma
+
+Style/TrailingCommaInHashLiteral:
+  EnforcedStyleForMultiline: comma
+
+Layout/SpaceBeforeBlockBraces:
+  EnforcedStyle: no_space
+  EnforcedStyleForEmptyBraces: no_space
+
+Style/RaiseArgs:
+  EnforcedStyle: compact
+
+Style/EvalWithLocation:
+  Exclude:
+    - '**/*_spec.rb'
+
+Metrics/ModuleLength:
+  Enabled: false
+
+Layout/AccessModifierIndentation:
+  EnforcedStyle: outdent
+
+Layout/IndentationWidth:
+  Width: 2
+
+Layout/MultilineOperationIndentation:
+  EnforcedStyle: indented
+
+Layout/MultilineMethodCallIndentation:
+  EnforcedStyle: indented
+
+Layout/ParameterAlignment:
+  EnforcedStyle: with_fixed_indentation
+
+Metrics/BlockLength:
+  Exclude:
+    - '**/*_spec.rb'
+    - '**/*_real.rb'
+
+Style/DocumentDynamicEvalDefinition:
+  Enabled: false
+
